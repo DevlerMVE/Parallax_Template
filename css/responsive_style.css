@@ -1,0 +1,94 @@
+/*
+ * 1. Generic
+ * 2. Transitions
+ * 3. Header
+ * 4. Main Content
+ * 5. Perload
+ */
+
+/****************
+   3. Header
+*****************/
+a.button-collapse {
+    padding-left: 2%;
+}
+
+.side-nav li a {
+    color: #555555 !important;
+}
+
+.button-collapse {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+@media only screen and (max-width: 992px) {
+    nav.navbar-fixed {
+        width: 100%;
+        left: 0;
+    }
+
+    div#index-banner.parallax-container {
+        height: 100vh;
+    }
+
+    div#index-banner {
+        margin: 0;
+    }
+
+    h1.header.center.teal-text.text-lighten-2 {
+        font-size: 4.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1.header.center.teal-text.text-lighten-2 {
+        font-size: 3.2rem;
+        margin-top: 20vh;
+    }
+
+}
+
+/****************
+  4. Main Content
+*****************/
+/*------ Our classes ------*/
+@media only screen and (max-width: 992px) {
+    .container.scrollspy#ourclass {
+        padding: 56px 15px 15px;
+    }
+}
+
+/*------ Gallery  ------*/
+@media only screen and (max-width: 992px) {
+    .parallax-container#gallery {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+/*------ Club card  ------*/
+@media only screen and (max-width: 992px) {
+    #clubcard .row .col.s12.m12 .card {
+        width: 100%;
+    }
+}
+
+/*------ video ------*/
+@media only screen and (max-width: 992px) {
+    .parallax-container#video {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .parallax-container#video .overlay .container {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .parallax-container#video .overlay .col.s12.m12 {
+        top: 0;
+    }
+}
