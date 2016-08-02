@@ -30,6 +30,16 @@ a.button-collapse {
         left: 0;
     }
 
+    nav .brand-logo .logo {
+        display: none;
+    }
+
+    nav .brand-logo#logo {
+        font-size: 1.5rem;
+        height: 56px;
+        padding-top: 0;
+    }
+
     div#index-banner.parallax-container {
         height: 100vh;
     }
@@ -45,8 +55,8 @@ a.button-collapse {
 
 @media only screen and (max-width: 600px) {
     h1.header.center.teal-text.text-lighten-2 {
-        font-size: 3.2rem;
-        margin-top: 20vh;
+        font-size: 2.2rem;
+        margin-top: 15vh;
     }
 
 }
@@ -90,5 +100,33 @@ a.button-collapse {
 
     .parallax-container#video .overlay .col.s12.m12 {
         top: 0;
+    }
+}
+
+/*------ Testimonial ------*/
+@media only screen and (max-width: 992px) {
+    .parallax-container#testimonial {
+        height: 85vh;
+        margin-left: 15px;
+        margin-right: 15px;
+        min-height: 500px !important;
+    }
+
+    #testimonial .row .col.s12.m12 .carousel.carousel-slider.center {
+        height: 50vh !important;
+    }
+
+    .parallax-container#testimonial {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 p {
+        padding: 0;
+        font-size: 1rem;
+    }
+
+    #testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 img {
+        width: 17%;
     }
 }

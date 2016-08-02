@@ -20,8 +20,17 @@
             }
         });
     });
-    $('.carousel').carousel();
-
+    $('.carousel.carousel-slider').carousel({full_width: true});
+   /* var options = [
+        {
+            selector: '#main',
+            offset: 200,
+            callback: function () {
+                console.log('entra');
+            }
+        }
+    ];
+    Materialize.scrollFire(options);*/
 
 })(jQuery, window, document);
 

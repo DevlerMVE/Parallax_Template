@@ -1,10 +1,29 @@
 /*
+ * 0. Fonts
  * 1. Generic
  * 2. Transitions
  * 3. Header
  * 4. Main Content
  * 5. Perload
+ * 6. Footer
  */
+
+/****************
+   0. Fonts
+*****************/
+@font-face {
+    font-family: 'Relish Pro';
+    src: url("../fonts/relishrro/Relish_Pro.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Anurati Regular';
+    src: url("../fonts/anurati/Anurati-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
 /****************
    1. Generic
@@ -64,6 +83,9 @@ strong {
     transition: all 0.5s ease;
 }
 
+/****************
+   3. Header
+*****************/
 div#header {
     position: relative;
     top: 20vh;
@@ -73,9 +95,14 @@ div#header {
 
 h1.header.center.teal-text.text-lighten-2 {
     color: white !important;
-    font-family: Raleway, sans-serif;
-    font-size: 100pt;
+    font-family: "Anurati Regular", Raleway, sans-serif;
+    font-size: 6rem;
     padding-bottom: 5vh;
+    text-transform: uppercase;
+}
+
+h1.header.center.teal-text.text-lighten-2 strong {
+    padding-right: 5%;
 }
 
 nav {
@@ -114,15 +141,20 @@ nav.nav-color {
 
 nav .brand-logo {
     color: #555555;
-    font-family: Raleway, sans-serif;
+    font-family: "Anurati Regular", Raleway, sans-serif;
     padding-top: 4px;
+    text-transform: uppercase;
+}
+
+nav .brand-logo strong {
+    padding-right: 5%;
 }
 
 nav .brand-logo .logo {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     background: center no-repeat;
-    background-size: 70%;
+    background-size: 85%;
     background-color: rgba(255, 255, 255, 0);
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAEb0lEQVRoQ+1ZQU7bQBT9P2SRiEhNd6i21HACzAlKNlWdTeEEpSconKDhBKQnaDhBYZNI3ZCegHCCppKN2OFKiWAx9a/G2Kkz/pPYsUmE1GyQkGfmvZn/37z/B+GZ//CZ44f/BNZ9gokTuKzX6/e12k4JwPKJGohoEYDVcpyXqwIbYviJAEMiGpYQRz7AsDoeXzc9z4vjSBDomyaxQIXYtm9vR6sg0TfNPQC4TKxFdG27rjWXQM80BwjwhgHatB1nsAoCPcM4QsRTZq0L23H255+AYXQB8QMz+MR2nPaKCHQQ8VMaDFwISZCfmeM7s133MPp/f2urQeXyawSQxy1/j3+JGoDYYIkSjQAxCEMZ24joEcAAhfgVD09dFJDvH7Rubs4X5QAbf2Eydf1HoHsIUC/yNAhAJuegBDDwAdrc/BtEu29ddzifwNZWA8rln0uAa8oxG0Seukg013fDsP4gRsSTSbpgUdtxEhHDXmRaJQK4IN/vou8PVZLc5PPwJNYQYptKJQsR99kcZBRIzs8SSBODKoA4gTA/TpEokDxCHKIQx/E4143vm2aqHIw2hydgGAtVQAvgMbmv1BiWMY5C7EYktOMzqqCOwEIdnrODUiXea8JnquO68VnvIV0O8EoE8KPlOIFc9gxjhIivp0DDm7pnmndahSIa2a67LUMsnkNE9KvluoH0ZnUCLAHpRR5qtTtuF6NYV3cq0ui+aUo5fMGNjYD2Xr3ax1LpW/QNhRujEovPoRMJrZ3mgEgA1cnEkoaqp+QJEX1pue5R3zQXhpBurJRZAXA+c7JSBGInr26MlkC4iAfh7an6IGYXvep4vP1QqdShXJaXjXoKv0EIq/Lw4N3XatJpTi9C9YYNI8AiIgsBLHl762xMroKGOaXAL4Wh0JEAAq1GHIIQR1KBVJmMx/8Sl2e+ikyj2VrXytlkIjpuuW5nGfDaiyztZEHhsbkpTdlUjaTel4maqp0I4hvxciZ0YjmVds3UOZB2wtDfXKX9Pv4dZ86yzpMrB6LF+oZxCIhfsyweqVaWMdy3hRBgL7bFyAqp8IokoPNPLJXKePxSLdAXc05+URwB5XadC0ZjjddKIPQxWhsxA45opjxdBng0prATCAnMsxH/cBJ9tF23mwf40xBIqUZFyOfTEEhZT6Pv77+7ubl4ticggQcVGtE5IJ7laZgVlgOBg9zcvNL2hOZv96AyHh8sI6uFEdAW4ynjRPadqpNJMyuJQgjEusl8s4vomhA9BBiQbIoR1QFxh+GWuX1ZCAG1wooBOwEhulxXO6gZNjba8R6QzIusbfzcBLR1bEqtV4uirBYjPwGmj5PFaTJtlEwmb2kCoeqcAuK0Yx2ETkabsBYCfcP4QIidRP9nCZO2UgJh9SVfTqI3gbi/ua5MJntZZXAlBMI2h3wxYV9oZMxXJ5N2VvBBIZR80io2B4L+j3yvYl5dZEsEEQ/zWIEnIzBtkQPMPKpFMZNn1+MX2JMRSOkA1v7Z0jK6duQhgP8E1n0SfwFvkaZPp4VXrgAAAABJRU5ErkJggg==);
     float: left;
@@ -514,6 +546,78 @@ div#index-banner.parallax-container {
     color: #b71c1c;
 }
 
+/*------ Testimonials ------*/
+.parallax-container#testimonial {
+    height: 70vh;
+    margin-left: 15px;
+    margin-right: 15px;
+    min-height: 500px !important;
+}
+
+.parallax-container#testimonial .overlay {
+    padding-top: 64px;
+    background-color: rgba(31, 25, 25, 0.93);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#testimonial .row {
+    z-index: 0;
+}
+
+#testimonial .row .col.m12 {
+    color: #fff;
+    text-align: center;
+}
+
+#testimonial .row .col.m12 h5,
+#testimonial .row .col.m12 h1 {
+    text-transform: uppercase;
+}
+
+#testimonial .row .col.m12 h5 {
+    font-size: 1.2rem;
+    color: #b71c1c;
+}
+
+#testimonial .row .col.m12 h1 {
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+#testimonial .row .col.m12 .icon {
+    background: center no-repeat;
+    background-size: 70%;
+    height: 40px;
+    width: 40px;
+    margin: 25px auto;
+}
+
+#testimonial .row .col.m12 .icon#testimonial_icon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACZUlEQVRoQ+1ZgU0cMRCcqYCUABUAFUSpIEkFQAWBCggVhFQQ0kGoAFEBUEGggkAFGw1aS/f/93/22venl84S+pfwnmd2157xPbHjgzuOHzOBqSs4SQXMbB/ADwBHAPR903gG8AjggqS+L4ytE3DwDwA+FFbvFcDxMokpCPwB8LkQfJp+S/JLN3YKAv8C2U+Yn0keTE3Agtl/DyO5kPQpKjATmFuopofNbG6hXW6hF5ILyr1rp1BbITMz2YFvAKSO8jUa8i1S258kJf8Lo2IPvGmNZlbCzE7dkK3zNAIvA3bTZRAg8OJJOW9m5hz8r8zT6KxLYonAb5JKRHgU7wFvm78FfkaVOEjt1CFQDf7dWpRSN7PvAC4L465IKg5OoAn4KAF5+bRhc3k8kjx2Aje1bVOlA4FN2Osic5kPzYu0UMgKLNvgIWC5/48Q0Dl/mLuAz3siWdp2WUtECFRt4ixUBZMiBCRcejuwl7mOFHS/T5Uz4zdOKybgJ4nEJ1fIvpKUtRhlhAh0SFxvqIQyfzom+JAOdNPoqnzuZi5t7Cc3c9djtU2VDozSBxUPDbdQxZpNQ2cCTdMZeFhxBfzl7Ec3dEld9ZkuNrLPUmsNfervvu8yEsC7EpJFwE+bEwA6cYZeh6/DJfGTiuteu3LVjJIZJGBm8v4CXvo6fB0mgdcRexUFnXWMmpnaQmo7ignz1tJ1M7VbiE9vBRz8XcOsb6rGpxoSKwS2CD6RUkuFSfQR0IU9ulFDbSB3u/zDRe6D+giEbly5C66bF72xzQRqM5/im1WgFaBtPWdQyLYFJLrOTCCauVZx/wHzBN4xqZgjhwAAAABJRU5ErkJggg==);
+}
+
+#testimonial .row .col.s12.m12 .carousel.carousel-slider.center {
+    height: 40vh !important;
+}
+
+#testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 p {
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 25px;
+    font-size: 1.25rem;
+}
+
+#testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 img {
+    width: 5%;
+}
+
+#testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 h5 {
+    font-size: 0.8rem;
+}
+
 /****************
    5. Preload
 *****************/
@@ -550,7 +654,9 @@ div#index-banner.parallax-container {
     height: 100%;
 }
 
-/*FOOTER*/
+/****************
+   6. Footer
+*****************/
 footer.page-footer {
     margin: 0;
 }
@@ -563,3 +669,10 @@ footer.page-footer .footer-copyright .container {
     padding-top: 0;
 }
 
+footer.page-footer .footer-copyright .container a {
+    font-family: 'Relish Pro';
+}
+
+.btn-floating.btn-large.waves-effect.waves-light.red.darken-4 {
+    display: none;
+}

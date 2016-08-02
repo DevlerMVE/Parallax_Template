@@ -7,6 +7,8 @@
     <meta name="author" content="Marcos Vicente Espasandín">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="shortcut icon" href="./img/icon.png">
+
     <!-- CSS  -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway"/>
@@ -14,6 +16,7 @@
     <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
     <link href="css/responsive_style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 </head>
 <body>
 
@@ -69,11 +72,13 @@
         </div>
     </div>
 </div><!-- .PRELOADER -->
+
 <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <a class="btn-floating btn-large waves-effect waves-light red darken-4" href="#main">
         <i class="material-icons">arrow_upward</i>
     </a>
 </div>
+
 <!-- NAVIGATION BAR -->
 <nav id="navbar" class="navbar-fixed">
     <div class="nav-wrapper">
@@ -83,18 +88,20 @@
         <div class="container">
             <a href="#main" id='logo' class="brand-logo hidden">
                 <div class="logo"></div>
-                <strong>Fitness</strong> Club</a>
+                <strong>F i t n e s s</strong>  C l u b</a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#ourclass" class="white-text">About Us</a></li>
                 <li><a href="#gallery" class="white-text">Gallery</a></li>
                 <li><a href="#clubcard" class="white-text">Club's Card</a></li>
                 <li><a href="#personal" class="white-text">Our Staff</a></li>
+                <li><a href="#testimonial" class="white-text">Testimonials</a></li>
             </ul>
             <ul class="side-nav" id="mobile-demo">
                 <li><a href="#ourclass" class="white-text">About Us</a></li>
                 <li><a href="#gallery" class="white-text">Gallery</a></li>
                 <li><a href="#clubcard" class="white-text">Club's Card</a></li>
                 <li><a href="#personal" class="white-text">Our Staff</a></li>
+                <li><a href="#testimonial" class="white-text">Testimonials</a></li>
             </ul>
         </div>
     </div>
@@ -105,7 +112,7 @@
     <div class="overlay diagonal"></div>
     <div class="section no-pad-bot">
         <div id="header" class="container">
-            <h1 class="header center teal-text text-lighten-2"><strong>Fitness</strong> Club</h1>
+            <h1 class="header center teal-text text-lighten-2"><strong>F i t n e s s</strong>  C l u b</h1>
             <div class="row center">
                 <h5 class="header col s12 light">
                     Some call them opponents I call them victims
@@ -440,7 +447,69 @@
 
     </div>
 </div><!-- .PERSONAL -->
-
+<!-- TESTIMONIALS -->
+<div class="parallax-container scrollspy" id="testimonial">
+    <div class="overlay">
+        <div class="row">
+            <div class="col s12 m12">
+                <h5>TESTIMONIALS</h5>
+                <h1>WHAT THEY SAY ABOUT US</h1>
+                <div class="icon" id="testimonial_icon"></div>
+            </div>
+            <div class="col s12 m12">
+                <div class="carousel carousel-slider center" data-indicators="true">
+                    <div class="carousel-item transparent white-text" href="#one!">
+                        <div class="col s12 m12">
+                            <p class="white-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque
+                                harum maxime obcaecati? Accusantium at culpa esse fugiat fugit iste libero nemo non
+                                nulla optio perferendis quam quod, soluta, sunt voluptate."</p>
+                        </div>
+                        <div class="col s12 m12">
+                            <img src="./img/test1.jpg" alt="" class="circle responsive-img">
+                            <h5>Branca Lía</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item transparent white-text" href="#two!">
+                        <div class="col s12 m12">
+                            <p class="white-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                                dicta esse excepturi harum hic id ipsa laudantium magnam modi, numquam quasi quidem quo
+                                ratione repellat sunt, totam voluptas, voluptate voluptates."</p>
+                        </div>
+                        <div class="col s12 m12">
+                            <img src="./img/test4.jpg" alt="" class="circle responsive-img">
+                            <h5>Ivane Misho</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item transparent white-text" href="#three!">
+                        <div class="col s12 m12">
+                            <p class="white-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium
+                                ad consectetur ea explicabo facilis harum illum incidunt iusto minima, nesciunt nostrum
+                                officiis pariatur quod rem ut! Beatae facere iure repellendus."</p>
+                        </div>
+                        <div class="col s12 m12">
+                            <img src="./img/test2.jpg" alt="" class="circle responsive-img">
+                            <h5>Treasa Maja</h5>
+                        </div>
+                    </div>
+                    <div class="carousel-item transparent white-text" href="#four!">
+                        <div class="col s12 m12">
+                            <p class="white-text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores
+                                nostrum, saepe. Asperiores deleniti fugit in odit quaerat rerum, voluptas voluptate. Ab
+                                cum dicta dolore illo mollitia nisi nobis quasi totam."</p>
+                        </div>
+                        <div class="col s12 m12">
+                            <img src="./img/test3.jpg" alt="" class="circle responsive-img">
+                            <h5>Mathúin Loke</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="parallax">
+        <img src="./img/background3.jpg" alt="">
+    </div>
+</div><!-- .TESTIMONIALS -->
 <div id="contactus">
     <div class="map">
         <div id="map"></div>
@@ -491,14 +560,15 @@
     </div>
     <div class="footer-copyright ">
         <div class="container">
-            Made by <a class="grey-text " href="#">Marcos Vicente Espasandín</a>
+            Made by <a class="grey-text " href="#">Devler</a>
         </div>
     </div>
 </footer>
 
 
 <!--  Scripts-->
-<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 <script src="js/vendor/materialize.min.js"></script>
 <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
 <script src="js/vendor/jquery-imagefill.js"></script>

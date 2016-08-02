@@ -1,5 +1,8 @@
 (function () {
+    $('.btn-floating.btn-large.waves-effect.waves-light.red.darken-4').click(function () {
+        console.log($(window).width() + " " + $(window).height());
 
+    });
     $('#navbar a').click(function () {
         if ($(this).hasClass('button-collapse'))return;
         $('html, body').animate({
@@ -19,13 +22,8 @@
         console.log('sale');
     });
 
-    scrollefect();
 
-    $(document).scroll(function () {
-        scrollefect();
-    });
-
-    setheightImg();
+    setheights();
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('.parallax-container#gallery .parallax img').attr('src', 'img/background-m.jpg')
@@ -34,6 +32,7 @@
     }
 
     $(window).load(function () {
+        scrollefect();
         setTimeout(function () {
             $('.full').fadeOut('slow');
         }, 700);
@@ -42,11 +41,21 @@
         }, 3000);
     });
 
+    $(document).scroll(function () {
+        scrollefect();
+    });
+
 }());
+var scroll_start = 0;
+
+var offset = $('#index-banner').offset();
+
+var gotop = false;
+var gotop_top = $('#main').offset();
 
 function scrollefect() {
-    var scroll_start = 0;
-    var offset = $('#index-banner').offset();
+
+
     scroll_start = $(this).scrollTop();
     if (scroll_start > offset.top) {
         $('#navbar').addClass('nav-color');
@@ -62,9 +71,15 @@ function scrollefect() {
         $('.button-collapse').addClass('white-text');
         $('nav.navbar-fixed').removeClass('new').css('position', 'absolute');
     }
+
+    if (scroll_start > gotop_top.top && !gotop) {
+        $('.btn-floating.btn-large.waves-effect.waves-light.red.darken-4').show("scale", {}, 1000);
+        gotop = true;
+    }
 }
-function setheightImg() {
+function setheights() {
     $('#ourclass .row .col.m6 .picture').css('height', $('#ourclass .row .col.m6 .text_container').outerHeight() + 'px');
     $('.parallax-container#gallery').css('height', $('#gallery .row').height() + 90 + 'px');
     $('.parallax-container#video').css('height', $('.parallax-container#video .overlay .container').height() + 'px');
+
 }
