@@ -618,6 +618,77 @@ div#index-banner.parallax-container {
     font-size: 0.8rem;
 }
 
+/*------ Contact Us ------*/
+#contactus .row .col.m12 {
+    text-align: center;
+}
+
+#contactus .row .col.m12 h5,
+#contactus .row .col.m12 h1 {
+    text-transform: uppercase;
+}
+
+#contactus .row .col.m12 h5 {
+    font-size: 1.2rem;
+    color: #b71c1c;
+}
+
+#contactus .row .col.m12 h1 {
+    font-size: 1.7rem;
+}
+
+#contactus .row .col.m12 .icon {
+    background: center no-repeat;
+    background-size: 70%;
+    height: 40px;
+    width: 40px;
+    margin: 25px auto;
+}
+
+#contactus .row .col.m12 .icon#contact {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACpElEQVRoQ+2ZQW7TQBRA/5eyaJVKhF3VjESPkBtAN0jOhh4hvUFyAsgJ6hsk3KBsaolN4QY5QpHGVXcEqRYsLH303YJie2zPjL8DCGcVJeM///15nhnNIHT0iY6PT2EwWBHAFtN0Edzf33bRFXYRNFLqLQC8+xU7gwAIA62X0v2JAkRKvQKiFSCeGhMlugXEi0DrT1IgIgCsCw0GlwhwbpMYAVxJadUagHUhgDkCjIrJE9EX/g0RX5T+E9LKG6BRF4DlwcNDyIn/ODqaAwC/F+VPS62cAZp0IYDPmKaz4qzz9NwaAV4aOTy1cgJo1IVoPr27u6p7D65PTs4BMZTSygrAVpez7XZr8xLfjEYjKa1qAXx1sYHgNhJaVQJI6GIL0karEgAP7/fh8AYRJxUJZLOLrS62EE1aEdHmMEnOiv2WACKleAtQmvKqZhfbBG3b1WpF9D6I49lurBLAtVJfdxelbDGymF1sE7RtZ9KK91RTrZ/XAkRK0W4DIgoPk2QprUwTSKbUcHgJiLmKB1rnim5SKAfAHbF/A4CL13G8aepY4v+P4/EkBViZ3kMvgAyC9y5EiyCO1xJJVsWIxuMZIfLGsLS34me8AX53SLQ+SJKFtFJVyhRB2wN0oFSdMp0ASCrVpExnAG2VslWmewAPpVyU2QuAi1KuyuwNoEkpX2X2D2BQqo0yfwRgV6nse83C5LooiqwDrp1Ktu8BJKvpE6sfAZ+qST7Tj4BkNX1i9SPgUzXJZ/6LEeDzzWeSVZOKxUc80zjO3f6YTiX4dPmNVKfCcT4EWudugcoAj7eLfHzyt43CN0jTSfHewXi4+3RFGhLRxHSOL1zV2nCsDSJuIE3npqtaq/uBfSbs2lcP4Fox6fb9CEhX1DVePwKuFZNu/8+PwE9lg8xAFM5pogAAAABJRU5ErkJggg==);
+}
+#contactus .row .col.m12 .card.red.lighten-5{
+    z-index: 1;
+}
+#contactus .row .col.m12 .card .card-content form.col.s12 {
+    padding: 10%;
+}
+
+#contactus .row form.col.s12 {
+    text-align: left;
+}
+
+#contactus .row form.col.s12 .row .input-field textarea.materialize-textarea,
+#contactus .row form.col.s12 .row input[type=text] {
+    border-bottom: 1px solid #211f1f;
+}
+
+#contactus .row form.col.s12 .row .input-field textarea.materialize-textarea:focus:not([readonly]),
+#contactus .row form.col.s12 .row input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #b71c1c;
+    box-shadow: 0 1px 0 0 #b71c1c;
+}
+
+#contactus .row form.col.s12 .row .input-field label {
+    color: #211f1f;
+}
+
+#contactus .row form.col.s12 .row .input-field textarea.materialize-textarea:focus:not([readonly]) + label,
+#contactus .row form.col.s12 .row .input-field input[type=text]:focus:not([readonly]) + label {
+    color: #b71c1c;
+}
+
+#contactus .row .adress {
+    height: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0 2px 2px 0;
+}
+
 /****************
    5. Preload
 *****************/
@@ -647,7 +718,8 @@ div#index-banner.parallax-container {
 
 .map {
     position: relative;
-    height: 60vh;
+    height: 45vh;
+    margin: -85px 15px 0;
 }
 
 #map {
@@ -658,7 +730,7 @@ div#index-banner.parallax-container {
    6. Footer
 *****************/
 footer.page-footer {
-    margin: 0;
+    margin: 0 15px 15px;
 }
 
 footer.page-footer .footer-copyright {
