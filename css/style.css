@@ -648,11 +648,13 @@ div#index-banner.parallax-container {
 #contactus .row .col.m12 .icon#contact {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACpElEQVRoQ+2ZQW7TQBRA/5eyaJVKhF3VjESPkBtAN0jOhh4hvUFyAsgJ6hsk3KBsaolN4QY5QpHGVXcEqRYsLH303YJie2zPjL8DCGcVJeM///15nhnNIHT0iY6PT2EwWBHAFtN0Edzf33bRFXYRNFLqLQC8+xU7gwAIA62X0v2JAkRKvQKiFSCeGhMlugXEi0DrT1IgIgCsCw0GlwhwbpMYAVxJadUagHUhgDkCjIrJE9EX/g0RX5T+E9LKG6BRF4DlwcNDyIn/ODqaAwC/F+VPS62cAZp0IYDPmKaz4qzz9NwaAV4aOTy1cgJo1IVoPr27u6p7D65PTs4BMZTSygrAVpez7XZr8xLfjEYjKa1qAXx1sYHgNhJaVQJI6GIL0karEgAP7/fh8AYRJxUJZLOLrS62EE1aEdHmMEnOiv2WACKleAtQmvKqZhfbBG3b1WpF9D6I49lurBLAtVJfdxelbDGymF1sE7RtZ9KK91RTrZ/XAkRK0W4DIgoPk2QprUwTSKbUcHgJiLmKB1rnim5SKAfAHbF/A4CL13G8aepY4v+P4/EkBViZ3kMvgAyC9y5EiyCO1xJJVsWIxuMZIfLGsLS34me8AX53SLQ+SJKFtFJVyhRB2wN0oFSdMp0ASCrVpExnAG2VslWmewAPpVyU2QuAi1KuyuwNoEkpX2X2D2BQqo0yfwRgV6nse83C5LooiqwDrp1Ktu8BJKvpE6sfAZ+qST7Tj4BkNX1i9SPgUzXJZ/6LEeDzzWeSVZOKxUc80zjO3f6YTiX4dPmNVKfCcT4EWudugcoAj7eLfHzyt43CN0jTSfHewXi4+3RFGhLRxHSOL1zV2nCsDSJuIE3npqtaq/uBfSbs2lcP4Fox6fb9CEhX1DVePwKuFZNu/8+PwE9lg8xAFM5pogAAAABJRU5ErkJggg==);
 }
-#contactus .row .col.m12 .card.red.lighten-5{
+
+#contactus .row .col.m12 .card.white {
     z-index: 1;
 }
+
 #contactus .row .col.m12 .card .card-content form.col.s12 {
-    padding: 10%;
+    padding: 5% 10%;
 }
 
 #contactus .row form.col.s12 {
@@ -679,14 +681,67 @@ div#index-banner.parallax-container {
     color: #b71c1c;
 }
 
-#contactus .row .adress {
+#contactus .row .col.s12.m4.adress {
     height: 100%;
-    padding-right: 0;
-    padding-left: 0;
+    padding: 20px;
     position: absolute;
     right: 0;
     top: 0;
     border-radius: 0 2px 2px 0;
+}
+
+#contactus .row .col.s12.m4.adress h5 {
+    color: #fff;
+}
+
+#contactus .row .col.s12.m4.adress .row .info {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#contactus .row .col.s12.m4.adress .row .info .row:nth-child(2) {
+    position: relative;
+    top: 25px;
+}
+
+#contactus .row .col.s12.m4.adress .row .info .row:nth-child(2) .text_content {
+    padding-bottom: 20px;
+}
+
+#contactus .row .col.s12.m4.adress .row .info .row:nth-child(2) .material-icons {
+    font-size: 0.9rem;
+    color: #ffcdd2;
+}
+
+#contactus .row .col.s12.m4.adress .row .info .row:nth-child(2) .contactinfo {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #ffcdd2;
+}
+
+#contactus .row .col.s12.m4.adress .row .info .row:nth-child(3) p {
+    text-align: right;
+}
+
+#contactus .row .col.s12.m4.adress .row .info .row:nth-child(3) p a {
+    color: #fff;
+}
+
+#contactus .row .col.s12.m4.adress .row .info .row:nth-child(3) p .fa {
+    padding: 5%;
+    font-size: 1.5rem;
+}
+
+#contactus .row .col.s12.m4.adress .row .info p {
+    width: 100%;
+    float: right;
+    text-align: left;
+    padding-left: 5%;
+}
+
+#contactus .row .col.s12.m4.adress .row .info p.contactinfo span {
+    vertical-align: 2px;
+    padding-left: 15px;
 }
 
 /****************
@@ -719,7 +774,7 @@ div#index-banner.parallax-container {
 .map {
     position: relative;
     height: 45vh;
-    margin: -85px 15px 0;
+    margin: -30vh 15px 0;
 }
 
 #map {

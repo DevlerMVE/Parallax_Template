@@ -130,3 +130,42 @@ a.button-collapse {
         width: 17%;
     }
 }
+
+/*------ Contact ------*/
+@media only screen and (max-width: 992px) {
+    .container#contactus {
+        width: 100%;
+    }
+
+    #contactus .row .col.m12 .card.white {
+        box-shadow: none;
+    }
+
+    #contactus .card-content.black-text {
+        padding-bottom: 5px;
+    }
+
+    #contactus .card .card-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #contactus a.waves-effect.waves-light.btn.red.darken-4 {
+        width: 100%;
+    }
+
+    #contactus .input-field.col.s6 {
+        width: 100%;
+    }
+
+    #contactus .row .col.s12.m4.adress {
+        position: relative;
+        border-radius: 0;
+        top: 30px;
+    }
+
+    .map {
+        margin: -45px 0 0;
+        height: 50vh;
+    }
+}
