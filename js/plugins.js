@@ -36,16 +36,14 @@
 
 //MAPA
 function initMap() {
-    var center = ($(window).width() > 1466) ? {lat: 42.867264, lng: -8.560740} : {lat: 42.867339, lng: -8.555542};
-    var location_pos = {lat: 42.867339, lng: -8.555542};
-
+    var center = ($(window).width() > 1466) ? {lat: 42.880194, lng: -8.553680} : {lat: 42.880501, lng: -8.545654};
+    var location_pos = {lat: 42.880501, lng: -8.545654};
     var mapOptions = {
         scrollwheel: false,
         zoom: 17,
         center: center,
         scroll: {x: $(window).scrollLeft(), y: $(window).scrollTop()}
     };
-
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 

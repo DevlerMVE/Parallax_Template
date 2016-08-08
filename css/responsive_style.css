@@ -169,3 +169,12 @@ a.button-collapse {
         height: 50vh;
     }
 }
+
+/****************
+   6. Footer
+*****************/
+@media only screen and (max-width: 992px) {
+    footer.page-footer {
+        margin: 0;
+    }
+}

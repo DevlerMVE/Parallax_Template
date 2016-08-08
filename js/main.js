@@ -29,6 +29,7 @@
     mediaquery.addListener(handleWidthChange);
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $('.fixed-action-btn').remove();
         $('.parallax-container#gallery .parallax img').attr('src', 'img/background-m.jpg')
         $('#video-wrap').remove();
         $('.parallax-container#video .overlay').css('background-color', 'rgba(31, 25, 25, 0.93)');
@@ -92,7 +93,7 @@ function setheights() {
 function handleWidthChange(mediaquery) {
     if (mediaquery.matches) {
 
-    }else{
+    } else {
         $('#contactus .input-field.col.s6 #phone').parent().css("display", "block");
     }
 }

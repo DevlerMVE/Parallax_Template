@@ -786,10 +786,15 @@ div#index-banner.parallax-container {
 *****************/
 footer.page-footer {
     margin: 0 15px 15px;
+    background-color: #1c1717;
+}
+
+footer.page-footer h5 {
+    color: #b71c1c !important;
 }
 
 footer.page-footer .footer-copyright {
-    background-color: rgb(51, 51, 51);
+    background-color: rgba(0, 0, 0, 0.20);
 }
 
 footer.page-footer .footer-copyright .container {
@@ -798,6 +803,10 @@ footer.page-footer .footer-copyright .container {
 
 footer.page-footer .footer-copyright .container a {
     font-family: 'Relish Pro';
+}
+
+footer #twits .row p {
+    margin: 0;
 }
 
 .btn-floating.btn-large.waves-effect.waves-light.red.darken-4 {
