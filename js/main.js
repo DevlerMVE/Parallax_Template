@@ -15,11 +15,9 @@
     $('#gallery .row .col.m3 .picture .overlay').hover(function () {
         $(this).css('background-color', 'rgba(183, 28, 28, 0.49)');
         $(this).children('.plus').css('display', 'block');
-        console.log('entra');
     }, function () {
         $(this).css('background-color', 'transparent');
         $(this).children('.plus').css('display', 'none');
-        console.log('sale');
     });
 
 
@@ -29,11 +27,13 @@
     mediaquery.addListener(handleWidthChange);
 
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        $('.fixed-action-btn').remove();
         $('.parallax-container#gallery .parallax img').attr('src', 'img/background-m.jpg')
-        $('#video-wrap').remove();
         $('.parallax-container#video .overlay').css('background-color', 'rgba(31, 25, 25, 0.93)');
-        $('#contactus .input-field.col.s6 #phone').parent().css("display", "none");
+        //remove if it's a phone.
+        $('#contactus .input-field.col.s6 #phone').parent().remove();
+        $('#gallery .row .col.m3 .picture .overlay').remove();
+        $('.fixed-action-btn').remove();
+        $('#video-wrap').remove();
     }
 
     $(window).load(function () {

@@ -7,20 +7,14 @@
  * 5. Perload
  * 6. Footer
  */
-
 /****************
    0. Fonts
 *****************/
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+
 @font-face {
     font-family: 'Relish Pro';
     src: url("../fonts/relishrro/Relish_Pro.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Anurati Regular';
-    src: url("../fonts/anurati/Anurati-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -66,6 +60,17 @@ strong {
     display: block;
 }
 
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Chrome/Safari/Opera */
+    -khtml-user-select: none; /* Konqueror */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                           not supported by any browser */
+}
+
 /****************
    2. Transitions
 *****************/
@@ -86,6 +91,10 @@ strong {
 /****************
    3. Header
 *****************/
+.btn-floating.btn-large.waves-effect.waves-light.red.darken-4 {
+    display: none;
+}
+
 div#header {
     position: relative;
     top: 20vh;
@@ -95,10 +104,9 @@ div#header {
 
 h1.header.center.teal-text.text-lighten-2 {
     color: white !important;
-    font-family: "Anurati Regular", Raleway, sans-serif;
-    font-size: 6rem;
+    font-family: 'Poiret One', sans-serif;
+    font-size: 10rem;
     padding-bottom: 5vh;
-    text-transform: uppercase;
 }
 
 h1.header.center.teal-text.text-lighten-2 strong {
@@ -141,9 +149,8 @@ nav.nav-color {
 
 nav .brand-logo {
     color: #555555;
-    font-family: "Anurati Regular", Raleway, sans-serif;
+    font-family: 'Poiret One', sans-serif;
     padding-top: 4px;
-    text-transform: uppercase;
 }
 
 nav .brand-logo strong {
@@ -356,6 +363,14 @@ div#index-banner.parallax-container {
     height: 250px;
 }
 
+#gallery .row .col.m3 .picture img {
+    -webkit-transition: all 150ms ease-in-out;
+    -moz-transition: all 150ms ease-in-out;
+    -ms-transition: all 150ms ease-in-out;
+    -o-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
 #gallery .row .col.m3 .picture .overlay {
     width: 100%;
     height: 100%;
@@ -552,6 +567,7 @@ div#index-banner.parallax-container {
     margin-left: 15px;
     margin-right: 15px;
     min-height: 500px !important;
+    max-height: 750px;
 }
 
 .parallax-container#testimonial .overlay {
@@ -601,6 +617,7 @@ div#index-banner.parallax-container {
 
 #testimonial .row .col.s12.m12 .carousel.carousel-slider.center {
     height: 40vh !important;
+    max-height: 500px;
 }
 
 #testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 p {
@@ -773,7 +790,7 @@ div#index-banner.parallax-container {
 
 .map {
     position: relative;
-    height: 45vh;
+    height: 55vh;
     margin: -30vh 15px 0;
 }
 
@@ -789,8 +806,13 @@ footer.page-footer {
     background-color: #1c1717;
 }
 
+footer.page-footer .container {
+    width: 90%;
+}
+
 footer.page-footer h5 {
     color: #b71c1c !important;
+    text-transform: uppercase;
 }
 
 footer.page-footer .footer-copyright {
@@ -809,6 +831,7 @@ footer #twits .row p {
     margin: 0;
 }
 
-.btn-floating.btn-large.waves-effect.waves-light.red.darken-4 {
-    display: none;
+footer .schedule {
+    min-width: 303px;
 }
+

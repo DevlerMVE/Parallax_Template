@@ -7,8 +7,18 @@
  */
 
 /****************
+   1. Generic
+*****************/
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+    .col.s12.m3 {
+        width: 49%;
+    }
+}
+
+/****************
    3. Header
 *****************/
+
 a.button-collapse {
     padding-left: 2%;
 }
@@ -22,6 +32,49 @@ a.button-collapse {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
+}
+
+div.container#nav-head {
+    width: 100%;
+    height: 30vh;
+    margin-bottom: 25px;
+    padding: 25px;
+}
+
+div.container#nav-head .row .col.s12.m12 p a {
+    color: white !important;
+    width: 15%;
+    float: right;
+    font-size: 1.5rem;
+}
+
+div.container#nav-head .row .col.s12.m3 {
+    width: 30%;
+}
+
+div.container#nav-head .row .col.s12.m9 {
+    width: 70%;
+}
+
+div.container#nav-head .icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: center no-repeat;
+    background-size: 70%;
+    background-color: #fff;
+    background-image: url("../img/icon_2.png");
+}
+
+div.container#nav-head h5 {
+    font-size: 2rem;
+    font-family: "Poiret One", serif;
+    margin-top: 0;
+}
+
+div.container#nav-head h1 {
+    font-size: 1rem;
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -50,6 +103,19 @@ a.button-collapse {
 
     h1.header.center.teal-text.text-lighten-2 {
         font-size: 4.2rem;
+    }
+    .side-nav li {
+        float: left;
+        line-height: 48px;
+        width: 100%;
+    }
+    nav ul a:hover{
+        border-bottom: 0;
+    }
+    nav ul a.active i,
+    nav ul a.active {
+        border-bottom: 0;
+        color: #b71c1c !important;
     }
 }
 
@@ -105,16 +171,6 @@ a.button-collapse {
 
 /*------ Testimonial ------*/
 @media only screen and (max-width: 992px) {
-    .parallax-container#testimonial {
-        height: 85vh;
-        margin-left: 15px;
-        margin-right: 15px;
-        min-height: 500px !important;
-    }
-
-    #testimonial .row .col.s12.m12 .carousel.carousel-slider.center {
-        height: 50vh !important;
-    }
 
     .parallax-container#testimonial {
         margin-right: 0;
@@ -128,6 +184,26 @@ a.button-collapse {
 
     #testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 img {
         width: 17%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .parallax-container#testimonial {
+        height: 60vh;
+    }
+
+    #testimonial .row .col.s12.m12 .carousel.carousel-slider.center {
+        height: 35vh !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .parallax-container#testimonial {
+        height: 85vh;
+    }
+
+    #testimonial .row .col.s12.m12 .carousel.carousel-slider.center {
+        height: 50vh !important;
     }
 }
 
@@ -164,6 +240,14 @@ a.button-collapse {
         top: 30px;
     }
 
+    #contactus .col.s12.m8 {
+        width: 100%;
+    }
+
+    #contactus .col.s12.m4.red.darken-4.white-text.adress {
+        width: 100%;
+    }
+
     .map {
         margin: -45px 0 0;
         height: 50vh;
@@ -173,6 +257,21 @@ a.button-collapse {
 /****************
    6. Footer
 *****************/
+@media only screen and (max-width: 1024px) {
+    footer.page-footer .col.s12.m5 {
+        width: 32%;
+    }
+
+}
+
+@media only screen and (max-width: 865px) {
+    footer.page-footer .col.s12.m5,
+    footer.page-footer .col.s12.m4,
+    footer.page-footer .col.s12.m3 {
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     footer.page-footer {
         margin: 0;
