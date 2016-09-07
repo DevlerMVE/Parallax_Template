@@ -104,14 +104,17 @@ div.container#nav-head h1 {
     h1.header.center.teal-text.text-lighten-2 {
         font-size: 4.2rem;
     }
+
     .side-nav li {
         float: left;
         line-height: 48px;
         width: 100%;
     }
-    nav ul a:hover{
+
+    nav ul a:hover {
         border-bottom: 0;
     }
+
     nav ul a.active i,
     nav ul a.active {
         border-bottom: 0;
@@ -146,6 +149,13 @@ div.container#nav-head h1 {
 }
 
 /*------ Club card  ------*/
+@media only screen and (max-width: 1366px) {
+    .container#personal,
+    .container#clubcard {
+        width: 90%;
+    }
+}
+
 @media only screen and (max-width: 992px) {
     #clubcard .row .col.s12.m12 .card {
         width: 100%;
@@ -170,6 +180,13 @@ div.container#nav-head h1 {
 }
 
 /*------ Testimonial ------*/
+@media only screen and (max-width: 1366px) {
+    #testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 p {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
 @media only screen and (max-width: 992px) {
 
     .parallax-container#testimonial {

@@ -455,10 +455,10 @@ div#index-banner.parallax-container {
 
 /*------ video ------*/
 .parallax-container#video {
-    height: 50vh;
+    height: 50vh !important;
+    min-height: 370px !important;
     margin-left: 15px;
     margin-right: 15px;
-    min-height: 500px !important;
 }
 
 .parallax-container#video .overlay {
@@ -563,11 +563,9 @@ div#index-banner.parallax-container {
 
 /*------ Testimonials ------*/
 .parallax-container#testimonial {
-    height: 70vh;
+    height: 550px;
     margin-left: 15px;
     margin-right: 15px;
-    min-height: 500px !important;
-    max-height: 750px;
 }
 
 .parallax-container#testimonial .overlay {
@@ -616,8 +614,7 @@ div#index-banner.parallax-container {
 }
 
 #testimonial .row .col.s12.m12 .carousel.carousel-slider.center {
-    height: 40vh !important;
-    max-height: 500px;
+    height: 305px;
 }
 
 #testimonial .col.s12.m12 .carousel .carousel-item .col.s12.m12 p {
@@ -834,4 +831,3 @@ footer #twits .row p {
 footer .schedule {
     min-width: 303px;
 }
-
